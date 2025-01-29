@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif, "Gilory";
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 html,
 body {
@@ -68,6 +68,22 @@ nav {
   position: relative;
   z-index: 9;
 }
-#nav-part2 h4:hover a{
-    color: var(--white);
+#nav-part2 h4:hover a {
+  color: var(--white);
+}
+/* Banner center Page */
+#center {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#left h3 {
+  width: 30vw;
+  font-size: 2vw;
+  font-family: inherit;
+}
+#right {
 }
