@@ -1,9 +1,14 @@
+@font-face {
+  font-family: neu;
+  src: url(./neue-haas-font/NeueHaasDisplayBlack.ttf);
+}
 :root {
   --Primery-color: #efeae3;
   --secondry-color: #eee;
   --therd-color: #1e1d1d;
   --black: #000000;
   --white: #fff;
+  --banner-border: #0000003c;
 }
 * {
   margin: 0;
@@ -17,14 +22,15 @@ body {
   width: 100%;
 }
 #page1 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: var(--Primery-color);
   position: relative;
+  padding: 0 2vw;
 }
 /* Navbar css */
 nav {
-  padding: 2vw 2vw;
+  padding: 2vw 0vw;
   width: 100%;
   /* background-color: var(--secondry-color); */
   display: flex;
@@ -71,19 +77,38 @@ nav {
 #nav-part2 h4:hover a {
   color: var(--white);
 }
+
+/* ========================================================= */
 /* Banner center Page */
+/* ========================================================= */
 #center {
   height: 65vh;
-  width: 100vw;
+  width: 100%;
+  /* background-color: orange; */
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+  padding-bottom: 2.5vw;
 }
 
 #left h3 {
-  width: 30vw;
-  font-size: 2vw;
-  font-family: inherit;
+  width: 25vw;
+  font-size: 1.8vw;
+  line-height: 2vw;
 }
-#right {
+
+#center h1 {
+  font-size: 9vw;
+  text-align: right;
+  line-height: 8vw;
 }
+
+#page1 video{
+  width: 100%;
+  margin-top: 4vw;
+  border-radius: 20px;
+}
+/* ========================================================= */
+/*  */
+/* ========================================================= */
