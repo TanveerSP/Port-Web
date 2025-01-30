@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Sundwp Studio</title>
+    <link rel="shortcut icon" href="./ico.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Wraper Div -->
-    <div class="">
+    <div id="main">
+      <!-- Hero Page -->
       <div id="page1">
         <!-- Navbar here -->
         <nav>
@@ -40,10 +46,71 @@
           </div>
         </div>
 
-        <video autoplay loop muted src="https://cdn.pixabay.com/video/2022/02/13/107573-678540733_large.mp4"></video>
+        <!-- animational div -->
+        <div id="hero-shape">
+          <div id="hero1"></div>
+          <div id="hero2"></div>
+          <div id="hero3"></div>
+        </div>
+
+        <video
+          autoplay
+          loop
+          muted
+          src="https://cdn.pixabay.com/video/2022/02/13/107573-678540733_large.mp4"
+        ></video>
+      </div>
+
+      <!-- Midaal Page -->
+      <div id="page2">
+        <!-- Moving text here -->
+        <div id="moving-text">
+          <div class="con">
+            <h1>EXPERIENCES</h1>
+            <div id="gola"></div>
+            <h1>CONTENT</h1>
+            <div id="gola"></div>
+            <h1>ENVIRONMENTS</h1>
+            <div id="gola"></div>
+          </div>
+          <div class="con">
+            <h1>EXPERIENCES</h1>
+            <div id="gola"></div>
+            <h1>CONTENT</h1>
+            <div id="gola"></div>
+            <h1>ENVIRONMENTS</h1>
+            <div id="gola"></div>
+          </div>
+          <div class="con">
+            <h1>EXPERIENCES</h1>
+            <div id="gola"></div>
+            <h1>CONTENT</h1>
+            <div id="gola"></div>
+            <h1>ENVIRONMENTS</h1>
+            <div id="gola"></div>
+          </div>
+        </div>
+
+        <!-- second part -->
+         <div id="page2-bottom">
+          
+         </div>
       </div>
     </div>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>

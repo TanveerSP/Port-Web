@@ -9,6 +9,7 @@
   --black: #000000;
   --white: #fff;
   --banner-border: #0000003c;
+  --orange-color: #fe320a;
 }
 * {
   margin: 0;
@@ -99,16 +100,136 @@ nav {
 }
 
 #center h1 {
-  font-size: 9vw;
+  font-size: 10vw;
   text-align: right;
   line-height: 8vw;
 }
 
-#page1 video{
+#page1 video {
   width: 100%;
+  position: relative;
   margin-top: 4vw;
   border-radius: 20px;
 }
 /* ========================================================= */
-/*  */
+/* animation div  */
 /* ========================================================= */
+#hero-shape {
+  position: absolute;
+  width: 46vw;
+  height: 36vw;
+  right: 0;
+  top: 65vh;
+}
+
+#hero1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: var(--orange-color);
+  filter: blur(40px);
+}
+
+#hero2 {
+  background: linear-gradient(#FE320A, #fe3f0a);
+
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: anime2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  filter: blur(30px);
+}
+
+#hero3 {
+  background: linear-gradient(#fe320a, #fe3f0a);
+  height: 30vw;
+  position: absolute;
+  width: 30vw;
+  border-radius: 50%;
+  filter: blur(30px);
+  animation-name: anime1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(55%, -3%);
+  }
+
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+
+  to {
+    transform: translate(-20%, 30%);
+  }
+}
+
+/* ========================================================= */
+/* middel page */
+/* ========================================================= */
+#page2{
+  padding: 8vw 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--Primery-color);
+}
+#moving-text{
+ white-space: nowrap;
+ overflow-x: auto;
+}
+#moving-text::-webkit-scrollbar{
+  display: none;
+}
+.con{
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: movetext;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#moving-text h1{
+  font-size: 9vw;
+  display: inline-block;
+}
+
+#gola {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #FE320A;
+  margin: 1vw 2vw;
+}
+
+@keyframes movetext {
+  from{
+    transform: translate(0);
+  } to {
+    transform: translate(-100%);
+  }
+}
+
+/* ========================================================= */
+/* Page2 secotion 2 */
+/* ========================================================= */
+
+#page2-bottom{
+  
+}
