@@ -307,6 +307,19 @@ nav {
   padding: 4vw 0;
 }
 
+#sec {
+  display: flex;
+  align-items: center;
+  padding: 3vw 2vw;
+}
+#gol {
+  width: 20px;
+  height: 20px;
+  background-color: #fe3f0a;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .elem {
   height: 100px;
   width: 100%;
@@ -349,4 +362,58 @@ nav {
   display: none;
   background-size: cover;
   background-position: center;
+}
+
+/* ========================================= */
+/* Page4 */
+/* ========================================= */
+#page4 {
+  min-height: 80vh;
+  width: 100%;
+  padding: 4vw 0;
+  position: relative;
+}
+
+#black-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  border-radius: 21px;
+  margin: 0vw 2vw;
+}
+
+#tabs {
+  position: relative;
+  border-left: 2px solid #504a45;
+  padding: 2vw 0vw;
+}
+
+#tab-sec {
+  color: rgb(239, 234, 227);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 9vw;
+  gap: 14px;
+  padding: 0vw 9vw;
+}
+
+#tab-sec h2 {
+  font-size: 4.5vw;
+  font-weight: bolder;
+  position: relative;
+  cursor: pointer;
+  color: rgb(80, 74, 69);
+}
+
+#desc {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+#page4-img {
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 21px;
 }
