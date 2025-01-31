@@ -268,8 +268,8 @@ nav {
 }
 
 #page2 #gooey {
-  height: 40vw;
-  width: 40vw;
+  height: 35vw;
+  width: 35vw;
   position: absolute;
   border-radius: 50%;
   background: linear-gradient(to top right, #ff2d03, #ff5c0b);
@@ -317,6 +317,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 3vw 2vw;
+  margin: 4vw 0;
 }
 #gol {
   width: 20px;
@@ -377,7 +378,6 @@ nav {
   width: 100%;
   min-height: 80vh;
   background-color: var(--Primery-color);
-  padding: 4vw 0;
 }
 
 #black-box {
@@ -424,22 +424,60 @@ nav {
   border-radius: 21px;
 }
 
+/* =============================================== */
+/* swiper page */
+/* =============================================== */
 #page5 {
-  height: 60vh;
+  min-height: 100vh;
   width: 100%;
-  background-color: var(--Primery-color);
+  background-color: #efeae3;
+  padding: 10vw 2vw;
 }
+
+.swiper {
+  padding: 2vw 2vw;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  border-left: 1px solid #aeadad;
+  padding: 2vw 2vw;
+}
+
+#cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff2d03; /* Initial color */
+  pointer-events: none; /* Ensures the cursor doesn't block interactions */
+  transform: translate(-50%, -50%); /* Centers the cursor */
+  transition: background-color 0.4s ease, transform 0.2s ease;
+  z-index: 9999;
+  filter: blur(5px);
+}
+.swiper-slide:hover {
+  cursor: pointer; /* Turns the cursor to a hand */
+}
+/* =============================================== */
+/* empty page */
+/* =============================================== */
 
 #page6 {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
 }
 
+/* =============================================== */
+/* footer page */
+/* =============================================== */
 #footer {
   position: fixed;
   z-index: 9;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   background-color: var(--black);
   bottom: 0;
   color: white;
@@ -450,11 +488,17 @@ nav {
 }
 
 #footer-div {
-  padding: 4vw 2vw;
+  height: 20vh;
   width: 100%;
+  padding: 0vw 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#ul h a {
+  font-size: 2.1vw;
+  font-weight: 700;
 }
 
 #from {
@@ -464,7 +508,7 @@ nav {
   border-radius: 8px;
   text-align: left;
 }
-#from p{
+#from p {
   font-size: 18px;
 }
 .email-input {
@@ -496,8 +540,65 @@ nav {
   background-color: rgb(72, 71, 71);
 }
 #footer-bottom {
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 1vw 2vw;
+}
+
+#backcolor1 {
+  position: absolute;
+  z-index: -1;
+  height: 40vw;
+  width: 70vw;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  left: -30vw;
+  top: -30vw;
+  transform: rotate(-45deg);
+
+  animation-name: shape1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#backcolor2 {
+  position: absolute;
+  z-index: -1;
+  height: 50vw;
+  width: 100vw;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  right: -30vw;
+  top: -30vw;
+  transform: rotate(25deg);
+
+  animation-name: shape2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shape1 {
+  from {
+    filter: blur(70px);
+    transform: rotate(-35deg) translate(10%, -5%);
+  }
+  to {
+    filter: blur(70px);
+    transform: rotate(-35deg) translate(-5%, 10%);
+  }
+}
+
+@keyframes shape2 {
+  from {
+    filter: blur(70px);
+    transform: rotate(25deg) translate(-5%, 10%);
+  }
+  to {
+    filter: blur(70px);
+    transform: rotate(25deg) translate(10%, -5%);
+  }
 }
